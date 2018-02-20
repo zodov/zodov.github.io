@@ -46,14 +46,22 @@ textarea:focus {
   background-color: #e3a103;
 }
 /* typography */
-.section {
+section {
   padding: 10rem 0;
 }
 .section-header {
-  font-family: 'ProximaNova_bold', sans-serif;
   margin-bottom: 10rem;
-  font-size: 3.6rem;
   text-align: center;
+}
+.section-header-light {
+  color: #ffffff;
+}
+.section-header h2 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 3.6rem;
+}
+.section-header p {
+  font-size: 1.4rem;
 }
 /* main */
 .main {
@@ -179,6 +187,57 @@ textarea:focus {
   display: block;
   margin: 0 auto;
 }
+.price {
+  background: #46b814 url(../img/prices/prices-bg.jpg) center;
+}
+.price-header-btn {
+  margin-top: 2.5rem;
+}
+.price-button {
+  text-align: right;
+}
+.price-block {
+  padding: 1rem 3rem 4rem;
+  min-height: 50rem;
+  background-color: #ffffff;
+  text-align: center;
+  -webkit-box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+          box-shadow: 7px 12px 21px 0px rgba(0, 0, 0, 0.17);
+}
+.price-block h4 {
+  margin: 3rem 0;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.price-block img {
+  width: 100%;
+  max-width: 30rem;
+  display: inline-block;
+  margin-bottom: 2rem;
+}
+.price-tag {
+  display: block;
+  margin-bottom: 2rem;
+  font-size: 1.9rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.price-list {
+  padding: 0;
+  list-style-type: none;
+  min-height: 14rem;
+  line-height: 1.6;
+  font-size: 1.6rem;
+}
+.price-list li:before {
+  content: '';
+  display: inline-block;
+  width: 1.4rem;
+  height: 1.4rem;
+  background: url(../img/check.svg) no-repeat center;
+  background-size: 100%;
+  vertical-align: middle;
+  margin-right: 1rem;
+}
 .slick-active {
   outline: none;
 }
@@ -254,6 +313,20 @@ textarea:focus {
   .main-title {
     text-align: center;
     padding-bottom: 3rem;
+  }
+  .price-button {
+    text-align: center;
+    padding: 2rem 0;
+  }
+  .price-header-btn {
+    margin-top: 0;
+    margin-bottom: 2rem;
+  }
+  .price-block {
+    margin-top: 2rem;
+  }
+  .section-header-light {
+    margin-bottom: 0;
   }
 }
 @media (max-width: 767px) {
