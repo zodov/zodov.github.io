@@ -45,6 +45,29 @@ textarea:focus {
   cursor: pointer;
   background-color: #e3a103;
 }
+.form-input {
+  margin: 2rem 0;
+  display: block;
+  width: 100%;
+  padding: 1.7rem;
+  border: 1px solid #dddddd;
+  border-radius: 5px;
+}
+.form label {
+  position: absolute;
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+          transform: translateX(-50%) translateY(-50%);
+  background-color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.5rem;
+}
+.form-btn {
+  display: block;
+  height: 5.5rem;
+  width: 100%;
+  font-size: 1.6rem;
+}
 /* typography */
 section {
   padding: 10rem 0;
@@ -114,29 +137,6 @@ section {
 }
 .main-form-header strong {
   font-size: 1.9rem;
-}
-.main-form-input {
-  margin: 2rem 0;
-  display: block;
-  width: 100%;
-  padding: 1.7rem;
-  border: 1px solid #dddddd;
-  border-radius: 5px;
-}
-.main-form label {
-  position: absolute;
-  left: 50%;
-  -webkit-transform: translateX(-50%) translateY(-50%);
-          transform: translateX(-50%) translateY(-50%);
-  background-color: #ffffff;
-  font-size: 1.3rem;
-  padding: 0.5rem;
-}
-.main-form-btn {
-  display: block;
-  height: 5.5rem;
-  width: 100%;
-  font-size: 1.6rem;
 }
 .main-form small {
   display: block;
@@ -262,8 +262,24 @@ section {
   background-size: 70%;
 }
 .feedback {
+  position: relative;
   background: url(../img/feedback/feedback-bg.jpg) no-repeat center;
   background-size: cover;
+}
+.feedback-form {
+  background-color: #ffffff;
+  margin-top: 5rem;
+  padding: 4rem 10rem;
+  text-align: center;
+}
+.feedback-form h3 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+.feedback-form label {
+  -webkit-transform: translate(-50%, 7px);
+          transform: translate(-50%, 7px);
 }
 .feedback-prev-btn {
   left: -4rem;
@@ -320,6 +336,119 @@ section {
 .feedback-slider-btn img {
   width: 50%;
 }
+.feedback-btn {
+  max-width: 30rem;
+  margin: auto;
+}
+.hand {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  max-width: 30rem;
+}
+.scheme {
+  background: url(../img/scheme/scheme-bg.png) bottom -10rem right -15rem no-repeat;
+  background-size: 65rem;
+}
+.scheme-block {
+  min-height: 30rem;
+}
+.scheme-block h3 {
+  font-size: 2.2rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.all-inclusive {
+  background-color: #f5f5f5;
+}
+.all-inclusive .media {
+  min-height: 9rem;
+}
+.all-inclusive .media h4 {
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.6rem;
+}
+.all-inclusive .media p {
+  font-size: 1.1rem;
+}
+.all-inclusive .section-header-active h2 {
+  color: #46b814;
+  margin-bottom: 4rem;
+}
+.circle {
+  display: inline-block;
+  background-color: #46b814;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.circle-border {
+  display: inline-block;
+  width: 5rem;
+  height: 5rem;
+  padding: 0.3rem;
+  border: 2px solid #46b814;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 4rem;
+  color: #ffffff;
+  font-family: 'ProximaNova_bold', sans-serif;
+  font-size: 1.9rem;
+}
+.problems {
+  position: relative;
+}
+.problems-woman {
+  position: absolute;
+  width: 30rem;
+  bottom: 0;
+  left: 50%;
+  margin-left: -19rem;
+}
+.problems-list {
+  min-height: 35rem;
+  border: 4px solid;
+  margin-bottom: 2rem;
+  padding: 2rem;
+}
+.problems-list h4 {
+  font-size: 2.1rem;
+  font-family: 'ProximaNova_bold', sans-serif;
+}
+.problems-list ul {
+  list-style: none;
+  padding-left: 0;
+  padding-top: 2rem;
+}
+.problems-list ul li {
+  position: relative;
+  padding-left: 3.5rem;
+  margin-bottom: 3rem;
+}
+.problems-list ul li:before {
+  position: absolute;
+  content: '';
+  left: 0;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  width: 3rem;
+  height: 3rem;
+  background-color: #000;
+}
+.problems-list-good ul li:before {
+  background: url(../img/success-icon.png) center no-repeat;
+  background-size: 70%;
+}
+.problems-list-bad {
+  border-color: #e8e8e8;
+}
+.problems-list-bad h4 {
+  opacity: 0.5;
+}
+.problems-list-bad ul li:before {
+  background: url(../img/cancel-icon.png) center no-repeat;
+  background-size: 70%;
+}
 .popup {
   display: none;
   position: fixed;
@@ -359,6 +488,20 @@ section {
 .popup-header {
   font-family: 'ProximaNova_bold', sans-serif;
 }
+@media (max-width: 1199px) {
+  .feedback-form {
+    padding: 3rem 5rem;
+  }
+  .feedback .fotorama {
+    margin-bottom: 3rem;
+  }
+  .all-inclusive .media {
+    min-height: 9rem;
+  }
+  .problems-list {
+    min-height: 40rem;
+  }
+}
 @media (max-width: 991px) {
   .phone-block {
     text-align: center;
@@ -387,13 +530,45 @@ section {
   .section-header-light {
     margin-bottom: 0;
   }
+  .feedback-form label {
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+  }
+  .hand {
+    display: none;
+  }
+  .problems-list {
+    min-height: auto;
+  }
+  .problems-woman {
+    display: none;
+  }
 }
 @media (max-width: 767px) {
   .main {
     background-position: top left;
   }
+  .header {
+    text-align: center;
+  }
   .wrap-block {
     text-align: center;
+  }
+  .features-block p {
+    width: 60%;
+  }
+  .feedback-prev-btn {
+    left: 0;
+  }
+  .feedback-next-btn {
+    right: 0;
+  }
+  .scheme {
+    background: none;
+    text-align: center;
+  }
+  .scheme-block {
+    min-height: 20rem;
   }
 }
 @media (max-width: 513px) {
